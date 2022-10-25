@@ -37,4 +37,4 @@ The remote site is used for display.
 *Home Page*<br>
 
 ### Screenshot
-/javascript-code-quiz-master\Screenshot_Quiz_App.png
+Screenshot_Quiz_App.png
