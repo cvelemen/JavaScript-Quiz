@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Code quiz</title>
+    <!-- <link rel="stylesheet" href="./assets/css/normalize.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="info">
+        <button id="scores">View High Scores</button>
+        <div id="timer">
+          <p>Time: <span id="time">0</span></p>
+        </div>
+      </div>
+    </header>
+    <main id="page-content">
+      <div id="positionWrapper">
+        <section id="intro">
+          <h1>Welcome to the Coding Quiz</h1>
+          <p>
+            Test your knowledge and answer the following coding questions within
+            the given time. Answering incorrectly will take off time from each answer.
+          </p>
+
+          <button id="start-btn">Start Quiz</button>
+        </section>
+
+        <section id="quizHolder" class="hide">
+          <div id="questionHolder"></div>
+          <div id="scoreIndicator" class="invisible">
+            <p>&nbsp;</p>
+          </div>
+        </section>
+        <section id="finish" class="hide">
+          <h1>Complete</h1>
+          <p>Your final score is&nbsp; <span id="score"></span></p>
+          <div id="records">
+            <p>Enter Initials:</p>
+            <input id="initials" type="text" />
+            <button>Submit</button>
+          </div>
+          <div id="errorIndicator" class="invisible">
+            <p>&nbsp;</p>
+          </div>
+        </section>
+        <section id="highScores" class="hide">
+          <h1>High Scores</h1>
+          <div id="highScoreHolder"></div>
+          <button id="reset">Go Back</button>
+          <button id="clearScores">Clear Highscores</button>
+        </section>
+      </div>
+    </main>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
